@@ -1,4 +1,6 @@
 import 'package:easflow_v1/View/Home/splash_screen.dart';
+import 'package:easflow_v1/View/Account/create_account.dart';
+import 'package:easflow_v1/View/Account/edit_account.dart';
 
 import 'package:flutter/material.dart';
 
@@ -21,7 +23,7 @@ class _MyAppState extends State<MyApp> {
       theme: ThemeData(
         primaryColor: Colors.blue[900],
       ),
-      home: SplashScreen(),
+      home: CreateAccount(),
     );
   }
 }

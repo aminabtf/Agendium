@@ -3,6 +3,7 @@ import 'package:animator/animator.dart';
 import 'package:flutter/material.dart';
 import 'package:easflow_v1/Widgets/palette.dart';
 import 'package:easflow_v1/Services/animation_route.dart';
+import 'package:easflow_v1/View/Home/home.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -35,7 +36,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void goHome() {
     timer = Timer(const Duration(seconds: 3), () {
       Navigator.of(context).pushReplacement(
-        SlideButtom(page: const ()),
+        SlideButtom(page: Home()),
       );
     });
   }
